@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_22_034133) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_22_095821) do
+  create_table "games", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "discount_percent"
+    t.integer "final_price"
+    t.string "header_image"
+    t.string "name"
+    t.integer "original_price"
+    t.integer "steam_appid"
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "email"
     t.string "name"
+    t.string "password_digest"
     t.datetime "updated_at", null: false
   end
 end

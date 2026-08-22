@@ -24,7 +24,12 @@
   </head>
 
   <body class="bg-gray-50 min-h-screen">
-    <main class="container mx-auto mt-28 px-5 flex justify-center">
+    <main class="container mx-auto mt-28 px-5 flex flex-col items-center">
+      <% flash.each do |type, message| %>
+        <div class="w-full max-w-xl p-4 mb-4 rounded-lg text-sm <%= type == "notice" ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700" %>">
+          <%= message %>
+        </div>
+      <% end %>
       <%= yield %>
     </main>
   </body>

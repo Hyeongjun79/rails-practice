@@ -1,10 +1,21 @@
 <% provide(:title, "Home") %>
 
-<div class="flex flex-col items-center justify-center min-h-[70vh] text-center">
-  <div class="text-9xl ruby-glow mb-8">💎</div>
+<div class="flex flex-col items-center justify-center min-h-[70vh] text-center max-w-xl mx-auto">
+  <span class="text-xs font-medium tracking-[0.2em] text-gray-400 uppercase mb-4">Aki Ruby</span>
 
-  <h1 class="text-3xl font-bold text-gray-800 mb-2">Welcome</h1>
-  <p class="text-gray-500 mb-8">Learning Ruby on Rails, one step at a time.</p>
+  <h1 class="text-4xl font-light tracking-tight text-gray-900 mb-4">Welcome</h1>
 
-  <%= link_to "会員登録", new_user_path, class: "btn-primary inline-block w-auto px-8" %>
+  <div class="w-10 h-px bg-gray-300 mb-6"></div>
+
+  <p class="text-gray-500 mb-10">Learning Ruby on Rails, one step at a time.</p>
+
+  <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+    <%= link_to "会員登録", new_user_path, class: "btn-primary inline-block w-full sm:w-auto px-8" %>
+    <%= link_to "ログイン", login_path, class: "btn-primary sm:w-auto px-8" %>
+    <%= link_to "STEAM SALE GAMES", games_path, class: "btn-outline inline-block w-full sm:w-auto px-8" %>
+  </div>
+
+  
+    
+  
 </div>

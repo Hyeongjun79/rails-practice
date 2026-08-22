@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  steam_appid: 1
+  name: MyString
+  original_price: 1
+  final_price: 1
+  discount_percent: 1
+  header_image: MyString
+
+two:
+  steam_appid: 1
+  name: MyString
+  original_price: 1
+  final_price: 1
+  discount_percent: 1
+  header_image: MyString
